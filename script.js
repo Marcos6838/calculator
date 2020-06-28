@@ -18,7 +18,23 @@ function divide(num1, num2) {
     return answer;
 }
 
-console.log(add(5, 5));
-console.log(subtract(10, 13))
-console.log(multiply(5, 5))
-console.log(divide(100,10))
+function opChoice(num1, num2, operator){
+    switch(operator){
+        case "+":
+            console.log(add(num1, num2));
+            break;
+        case "-":
+            console.log(subtract(num1, num2));
+            break;
+        case "*":
+            console.log(multiply(num1, num2));
+            break;
+        case "/":
+            console.log(divide(num1,num2))
+            break;
+        
+    }
+}
+
+
+opChoice(5, 10, "*");
