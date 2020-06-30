@@ -11,10 +11,11 @@
    margin-top: 10%;
    
    
+   
 }
 
 .row{
-  
+  display: flex;
 }
 
 .buttons{
@@ -26,10 +27,15 @@
    flex: stretch;
 }
 
+#display{
+   height: 5em;
+   border: solid red;
+   text-align: right;
+}
 
 #one{
    width: 5rem;
-   height: 5em;
+   height: 5rem;
 }
 
 #two{
@@ -72,6 +78,13 @@
    height: 5rem;
 }
 
+#zero{
+   width: 5rem;
+   height: 5rem;
+   flex-grow: 1;
+   
+}
+
 #divide{
    width: 5rem;
    height: 5rem;
@@ -83,6 +96,17 @@
 }
 
 #subtract{
+   width: 5rem;
+   height: 5rem;
+}
+
+#decimal{
+   width: 5rem;
+   height: 5rem;
+   
+}
+
+#equals{
    width: 5rem;
    height: 5rem;
 }
