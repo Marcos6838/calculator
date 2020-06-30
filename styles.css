@@ -1,71 +1,88 @@
-html {
-   font-size: 62.5%;
-   box-sizing: border-box;
- }
- 
- *, *::before, *::after {
-   margin: 0;
-   padding: 0;
-   box-sizing: inherit;
- }
+
 
  body{
    background-color: lightblue;
 }
 
 .calculator{
-   border: 1px solid #ccc;
-   border-radius: 5px;
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   width: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10%;
+   
+   
+}
+
+.row{
+  
 }
 
 .buttons{
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-  
+   
+   border: solid black;
+}
+
+.row{
+   flex: stretch;
 }
 
 
 #one{
-  
+   width: 5rem;
+   height: 5em;
 }
 
 #two{
-   
+   width: 5rem;
+   height: 5rem;
 }
 
 #three{
-   
+   width: 5rem;
+   height: 5rem;
 }
 
 #four{
-   
+   width: 5rem;
+   height: 5rem;
 }
 
 #five{
-   
+   width: 5rem;
+   height: 5rem;
 }
 
 #six{
-   
+   width: 5rem;
+   height: 5rem;
 }
 
 #seven{
-   
+   width: 5rem;
+   height: 5rem;
 }
 
 #eight{
-   
+   width: 5rem;
+   height: 5rem;
 }
 
 #nine{
-   
+   width: 5rem;
+   height: 5rem;
 }
 
 #divide{
-   
+   width: 5rem;
+   height: 5rem;
+}
+
+#multiply{
+   width: 5rem;
+   height: 5rem;
+}
+
+#subtract{
+   width: 5rem;
+   height: 5rem;
 }
