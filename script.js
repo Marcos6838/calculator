@@ -8,23 +8,30 @@ let seven = document.querySelector('#seven');
 let eight = document.querySelector('#eight')
 let nine = document.querySelector('#nine');
 let zero = document.querySelector('#zero');
+let del = document.querySelector('#delete');
+let divide = document.querySelector('#divide')
+let multiply = document.querySelector('#multiply');
+let subtract = document.querySelector('#subtract');
+let equal = document.querySelector('#equals');
+let plusMinus = document.querySelector('#plusMinus');
+let decimal = document.querySelector('#decimal')
 
 function add(num1, num2){
     let answer = num1 + num2;
     return answer;
 }
 
-function subtract(num1, num2) {
+function opSubtract(num1, num2) {
     let answer = num1 - num2;
     return answer;
 }
 
-function multiply(num1, num2) {
+function opMultiply(num1, num2) {
     let answer = num1 * num2;
     return answer;
 }
 
-function divide(num1, num2) {
+function opDivide(num1, num2) {
     let answer = num1 / num2;
     return answer;
 }
@@ -35,13 +42,13 @@ function opChoice(num1, num2, operator){
             console.log(add(num1, num2));
             break;
         case "-":
-            console.log(subtract(num1, num2));
+            console.log(opSubtract(num1, num2));
             break;
         case "*":
-            console.log(multiply(num1, num2));
+            console.log(opMultiply(num1, num2));
             break;
         case "/":
-            console.log(divide(num1,num2))
+            console.log(opDivide(num1,num2))
             break;
         
     }
@@ -96,5 +103,33 @@ nine.addEventListener('click',function(e){
 
 
 zero.addEventListener('click',function(e){
+    console.log(e);
+})
+
+del.addEventListener('click',function(e){
+    console.log(e);
+})
+
+divide.addEventListener('click',function(e){
+    console.log(e);
+})
+
+multiply.addEventListener('click',function(e){
+    console.log(e);
+})
+
+subtract.addEventListener('click',function(e){
+    console.log(e);
+})
+
+equal.addEventListener('click',function(e){
+    console.log(e);
+})
+
+plusMinus.addEventListener('click',function(e){
+    console.log(e);
+})
+
+decimal.addEventListener('click',function(e){
     console.log(e);
 })
