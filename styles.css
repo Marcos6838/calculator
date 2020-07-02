@@ -1,7 +1,7 @@
 
 
  body{
-   
+   background-color: lightslategray;
 }
 
 
@@ -27,12 +27,14 @@
 }
 
 
-#display{
+.display{
    height: 5rem;
    border: solid red;
    flex-grow: 1;
    font-size: 35px;
    background-color: rgba(0, 0, 255, 0.979);
+   text-align: right;
+   
 }
 
 #delete{
