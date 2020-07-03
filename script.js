@@ -14,7 +14,9 @@ let multiply = document.querySelector('#multiply');
 let subtract = document.querySelector('#subtract');
 let equal = document.querySelector('#equals');
 let plusMinus = document.querySelector('#plusMinus');
-let decimal = document.querySelector('#decimal')
+let decimal = document.querySelector('#decimal');
+let display = document.querySelector('.display')
+let operand1 = document.querySelector("#num1");
 
 function add(num1, num2){
     let answer = num1 + num2;
@@ -57,53 +59,60 @@ function opChoice(num1, num2, operator){
 
 opChoice(5, 10, "*");
 
+
+
+
+
+
 one.addEventListener('click',function(e){
-    console.log(e);
-})
+    operand1.append(one.innerHTML)
+    
+
+});
 
 
 two.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(two.innerHTML)
 })
 
 
 three.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(three.innerHTML)
 })
 
 
 four.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(four.innerHTML)
 })
 
 
 five.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(five.innerHTML)
 })
 
 
 six.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(six.innerHTML)
 })
 
 
 seven.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(seven.innerHTML)
 })
 
 
 eight.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(eight.innerHTML)
 })
 
 
 nine.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(nine.innerHTML)
 })
 
 
 zero.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(zero.innerHTML)
 })
 
 del.addEventListener('click',function(e){
@@ -111,25 +120,25 @@ del.addEventListener('click',function(e){
 })
 
 divide.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(divide.innerHTML)
 })
 
 multiply.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(multiply.innerHTML)
 })
 
 subtract.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(subtract.innerHTML)
 })
 
 equal.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(equal.innerHTML)
 })
 
 plusMinus.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(plusMinus.innerHTML)
 })
 
 decimal.addEventListener('click',function(e){
-    console.log(e);
+    operand1.append(decimal.innerHTML)
 })
