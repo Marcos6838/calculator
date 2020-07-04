@@ -21,10 +21,9 @@ let display = document.querySelector('.display')
 let operand1 = document.querySelector("#num1");
 let operand2 = document.querySelector("#num2");
 let buttons = document.querySelector(".buttons")
-let counter = 0;
 
 function opAdd(num1, num2){
-    let answer = num1 + num2;
+    answer = num1 + num2;
     operand2.append(answer)
     return answer;
 }
@@ -37,11 +36,13 @@ function opSubtract(num1, num2) {
 
 function opMultiply(num1, num2) {
     let answer = num1 * num2;
+    operand2.append(answer)
     return answer;
 }
 
 function opDivide(num1, num2) {
     let answer = num1 / num2;
+    operand2.append(answer)
     return answer;
 }
 
@@ -63,20 +64,17 @@ function opChoice(num1, num2, operator){
     }
 }
 
-
-opChoice(5, 10, "*");
-
 let num1 = 0;
 let tempNumber
 let num2;
+let counter = 0;
+
 
 
 one.addEventListener('click',function(e){
     operand1.append(one.innerHTML)
     num1 += one.innerHTML;
- 
 });
-
 
 two.addEventListener('click',function(e){
     operand1.append(two.innerHTML)
@@ -142,6 +140,11 @@ divide.addEventListener('click',function(e){
     tempNumber = num1;
     num1 = ''
     operator = divide.innerHTML;
+    counter ++;
+    if(counter > 1){
+        operand1.innerHTML = '';
+        operand1.innerHTML = "ERROR";
+    }
 })
 
 multiply.addEventListener('click',function(e){
@@ -149,6 +152,11 @@ multiply.addEventListener('click',function(e){
     tempNumber = num1;
     num1 = ''
     operator = multiply.innerHTML;
+    counter ++;
+    if(counter > 1){
+        operand1.innerHTML = '';
+        operand1.innerHTML = "ERROR";
+    }
 })
 
 subtract.addEventListener('click',function(e){
@@ -156,25 +164,25 @@ subtract.addEventListener('click',function(e){
     tempNumber = num1;
     num1 = ''
     operator = subtract.innerHTML;
+    counter ++;
+    if(counter > 1){
+        operand1.innerHTML = '';
+        operand1.innerHTML = "ERROR";
+    }
 })
 
 add.addEventListener('click',function(e){
-    
-    counter ++;
     operand1.append(add.innerHTML)
-    
-    if(counter ===2){
-        num2 = parseFloat(num2)
-        num1 = parseFloat(num1)
-        opChoice(num1, num2, operator);
-        
-    }
     num2 = num1;
+    tempNumber = num1
     tempNumber = parseFloat(tempNumber)
     num1 = '';
     operator = add.innerHTML;
-    
-
+    counter ++;
+    if(counter > 1){
+        operand1.innerHTML = '';
+        operand1.innerHTML = "ERROR";
+    }
 })
 
 equal.addEventListener('click',function(e){
@@ -183,6 +191,12 @@ equal.addEventListener('click',function(e){
     num2 = num1
     num1 = tempNumber
     opChoice(num1, num2, operator)
+    let equalCounter;
+    equalCounter ++;
+    if(equalCounter > 1){
+        operand1.innerHTML = '';
+        operand1.innerHTML = "ERROR";
+    }
 })
 
 clear.addEventListener('click',function(e){
