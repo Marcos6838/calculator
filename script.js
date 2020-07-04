@@ -21,6 +21,7 @@ let display = document.querySelector('.display')
 let operand1 = document.querySelector("#num1");
 let operand2 = document.querySelector("#num2");
 let buttons = document.querySelector(".buttons")
+let counter = 0;
 
 function opAdd(num1, num2){
     let answer = num1 + num2;
@@ -158,11 +159,22 @@ subtract.addEventListener('click',function(e){
 })
 
 add.addEventListener('click',function(e){
+    
+    counter ++;
     operand1.append(add.innerHTML)
-    tempNumber = num1;
+    
+    if(counter ===2){
+        num2 = parseFloat(num2)
+        num1 = parseFloat(num1)
+        opChoice(num1, num2, operator);
+        
+    }
+    num2 = num1;
     tempNumber = parseFloat(tempNumber)
-    num1 = ''
+    num1 = '';
     operator = add.innerHTML;
+    
+
 })
 
 equal.addEventListener('click',function(e){
@@ -174,11 +186,12 @@ equal.addEventListener('click',function(e){
 })
 
 clear.addEventListener('click',function(e){
-    num1 = 0
-    num2 = 0
-    tempNumber = 0
-    operand1.innerHTML = ''
-    operand2.innerHTML = ''
+    num1 = 0;
+    num2 = 0;
+    tempNumber = 0;
+    operand1.innerHTML = '';
+    operand2.innerHTML = '';
+    counter = 0;
 })
 
 plusMinus.addEventListener('click',function(e){
