@@ -12,8 +12,6 @@
    justify-content: center;
    margin-top: 10%;
    
-   
-   
 }
 
 .row{
@@ -28,11 +26,11 @@
 
 
 .display{
-   height: 5rem;
-   border: solid red;
+   height: 6.5rem;
+   border: solid gray;
    flex-grow: 1;
    font-size: 35px;
-   background-color: rgba(0, 0, 255, 0.979);
+   background-color: rgba(0, 0, 0, 0.65);
    text-align: right;
    
 }
@@ -116,6 +114,11 @@
    height: 5rem;
 }
 
+#add{
+   width: 5rem;
+   height: 5rem;
+}
+
 #decimal{
    width: 5rem;
    height: 5rem;
@@ -126,3 +129,11 @@
    width: 5rem;
    height: 5rem;
 }
+
+#clear{
+   width: 5rem;
+   height: 5rem;
+   flex-grow: 1;
+}
+
+
