@@ -20,7 +20,7 @@ let decimal = document.querySelector('#decimal');
 let display = document.querySelector('.display')
 let operand1 = document.querySelector("#num1");
 let operand2 = document.querySelector("#num2");
-
+let buttons = document.querySelector(".buttons")
 
 function opAdd(num1, num2){
     let answer = num1 + num2;
@@ -103,7 +103,7 @@ six.addEventListener('click',function(e){
     operand1.append(six.innerHTML)
     num1 += six.innerHTML;
 })
-
+ 
 seven.addEventListener('click',function(e){
     operand1.append(seven.innerHTML)
     num1 += seven.innerHTML;
